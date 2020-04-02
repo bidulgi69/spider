@@ -13,4 +13,4 @@ Selenium
 
 .Csv will downloaded in your directory where python script located in.
 
-Used as python cralwer study (No commercial use.)
+Used as python study (No commercial use.)
