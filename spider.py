@@ -3,7 +3,7 @@ from selenium import webdriver
 import time
 import os
 
-chromeDriverSrc = "C:\\Users\\rhyme\\Downloads\\selenium\\chromedriver.exe"
+chromeDriverSrc = "Path chromedriver.exe installed"
 options = webdriver.ChromeOptions()
 
 driver = webdriver.Chrome(executable_path=chromeDriverSrc, options=options)
@@ -19,13 +19,13 @@ driver.find_elements_by_xpath('//*[@id="form-login-social"]/div[1]/div[2]/a')[0]
 # insert email account
 driver.implicitly_wait(2)
 email = driver.find_elements_by_xpath('//*[@id="identifierId"]')[0]
-email.send_keys("rhyme884")
+email.send_keys("your googld id")
 driver.find_elements_by_xpath('//*[@id="identifierNext"]')[0].click()
 
 # insert password
 time.sleep(6)
 pwd = driver.find_elements_by_xpath('//*[@id="password"]/div[1]/div/div[1]/input')[0]
-pwd.send_keys("moon**4035")
+pwd.send_keys("your google password")
 driver.find_elements_by_xpath('//*[@id="passwordNext"]')[0].click()
 
 time.sleep(8)
